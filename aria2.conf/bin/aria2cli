@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Aria2 Client #
+aria2c "$@" --conf-path="@path_to_config@/aria2.conf"

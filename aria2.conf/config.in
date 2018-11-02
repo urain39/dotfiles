@@ -1,0 +1,10 @@
+# Unix-like
+ARIA2_CONFIG_DIR=$HOME/.aria2
+ARIA2_DOWNLOAD_DIR=$HOME/Downloads/aria2
+
+# Android
+if [ -d /sdcard ]; then
+  # Android !?
+  ARIA2_CONFIG_DIR=/sdcard/.aria2
+  ARIA2_DOWNLOAD_DIR=/sdcard/Download/aria2
+fi

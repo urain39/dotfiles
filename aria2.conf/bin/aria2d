@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Fix trap on dash/sh #
+#SIGUP=1
+#SIGINT=2
+#SIGKILL=9
+#SIGTERM=15
+
+# Cleanup #
+#cleanup() {
+#  echo "Service stopping..."
+#  while pgrep httpd 2> /dev/null >&2; do
+#    pgrep httpd | xargs kill -s $SIGTERM 2> /dev/null
+#    echo "Waiting 3s for httpd stop..."
+#    sleep 3
+#  done
+#  echo "Service stopped!"
+#}
+
+# Trap Init #
+#cleanup && trap cleanup $SIGUP $SIGINT $SIGKILL $SIGTERM
+
+# Aria2 WebUI #
+#httpd -h "@path_to_config@/yaaw-zh-hans" -p 8888 || exit 1
+
+# Aria2 RPC #
+aria2c "$@" --enable-rpc=true --conf-path="@path_to_config@/aria2.conf"
+
