@@ -2,5 +2,8 @@
 # Personal DNS for LocalNetwork
 #
 
+#### Please Indent with two Tabs ####
+
 # Movies & Pictures
-publish.pub 192.168.1.250
+192.168.1.250		publish.pub
+
