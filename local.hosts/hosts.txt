@@ -1,11 +1,13 @@
 #
-# Personal DNS for LocalNetwork
+# PERSONAL HOSTS FOR LOCAL NETWORK
 #
 
-###### Please Indent It with Two Tabs ######
+###### PLEASE INDENT IT WITH TWO TABS ######
 
-# Movies & Pictures
-192.168.1.250		publish.local
+## FTP MEDIA SHARING ##
+192.168.1.250		public.local
 
-# 192.168.1.249		raspberry.local
+## SSH REMOTE CONNECTION ##
+192.168.1.240		raspberry.local
 
+###### END OF THE LOCAL NETWORK HOSTS ######
