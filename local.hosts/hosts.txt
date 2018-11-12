@@ -1,0 +1,6 @@
+#
+# Personal DNS for LocalNetwork
+#
+
+# Movies & Pictures
+publish.pub 192.168.1.250
