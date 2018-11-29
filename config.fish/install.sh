@@ -1,6 +1,6 @@
-#!/usr/bin/env fish
+#!/usr/bin/env sh
 
-set HERE $PWD
+HERE=$PWD
 
 ln -sf $HERE/config.fish ~/.config/fish/config.fish
 
