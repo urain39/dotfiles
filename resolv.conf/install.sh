@@ -1,16 +1,16 @@
 #!/bin/sh
 
 sudo sh <<EOF
-umask 022 # file 0644
-
-# Remove soft-link
-rm -rf /etc/resolv.conf 2> /dev/null
+umask 0222 # for unionfs
 
 # Unlock & Install
-chattr -iAa /etc/resolv.conf
+chattr -iAa /etc/resolv.conf 2> /dev/null
+rm -f /etc/resolv.conf 2> /dev/null # soft-link
+
+# Re-write the DNS
 base64 -d resolv.conf.b64 > /etc/resolv.conf
 
 # Lock the file
-chattr +iAa /etc/resolv.conf
+chattr +iAa /etc/resolv.conf 2> /dev/null
 EOF
 
