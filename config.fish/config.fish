@@ -1,5 +1,6 @@
-export TERM=linux
-export NODE_PATH=$PREFIX/lib/node_modules
+export TERM="linux"
+export PATH="$PATH:$HOME/.local/bin"
+export NODE_PATH="$PREFIX/lib/node_modules"
 
 # Drop current works, and force checkout last commit.
 function git_drop
