@@ -16,3 +16,17 @@ git_drop() {
 # EasyAria2Config
 # Add ~/.local/bin
 export PATH=$PATH:~/.local/bin
+
+_init_sshd_() {
+  # SSH for HEOS EZ01
+  if type sshd; then
+	pgrep sshd || sshd
+  fi
+}
+
+_init_start_() {
+  _init_sshd_
+}
+
+_init_start_ > /dev/null 2>&1
+
