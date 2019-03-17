@@ -9,8 +9,7 @@ function git_drop
 		return
 	end
 
-	rm -i -r *
-	git checkout -f HEAD^
+	rm -i -r *; and git checkout -f HEAD
 end
 
 # Alias function(s)

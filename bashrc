@@ -10,7 +10,7 @@ git_drop() {
 		return
 	fi
 
-	rm -i -r * && git checkout -f HEAD^
+	rm -i -r * && git checkout -f HEAD
 }
 
 # EasyAria2Config
@@ -30,7 +30,6 @@ rmedir() {
 }
 
 ## Init function(s)
-
 _init_sshd_() {
   # SSH for HEOS EZ01
   if type sshd; then
