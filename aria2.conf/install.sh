@@ -54,4 +54,4 @@ EOF
 export PATH=\$PATH:~/.local/bin
 EOF
 
-fi
+fi > /dev/null 2>&1
