@@ -26,19 +26,22 @@ rmedir() {
         rm -r "$dir"
       fi
     fi
-  done && unset cnt
+  done && unset cnt && unset dir
 }
 
 ## Init function(s)
-_init_sshd_() {
-  # SSH for HEOS EZ01
-  if type sshd; then
-	pgrep sshd || sshd
+_init_exec_() {
+  # $1: PROGRAM
+  if type "$1"; then
+	pgrep "$1" || {
+		"$1" &
+	}
   fi
 }
 
 _init_start_() {
-  _init_sshd_
+  _init_exec_ "sshd"
+  _init_exec_ "aria2d"
 }
 
 _init_start_ > /dev/null 2>&1

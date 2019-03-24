@@ -21,19 +21,22 @@ function rmedir
         rm -r "$dir"
       end
     end
-  end; and set -e cnt
+  end; and set -e cnt; and set -e dir
 end
 
 # Init function(s)
-function _init_sshd_
-  # SSH for HEOS EZ01
-  if type sshd
-    pgrep sshd; or sshd
+function _init_exec_
+  # $1: PROGRAM
+  if type "$argv[1]"
+    pgrep "$argv[1]"; or begin
+      "$argv[1]" &
+    end
   end
 end
 
 function _init_start_
-  _init_sshd_
+  _init_exec_ "sshd"
+  _init_exec_ "aria2d"
 end
 
 _init_start_ > /dev/null 2>&1
