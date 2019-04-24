@@ -1,3 +1,3 @@
 set enc=utf8
-set ts=4 sw=4 ff=unix mod
+set ts=2 sw=2 ff=unix mod et
 

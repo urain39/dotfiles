@@ -5,12 +5,12 @@ export NODE_PATH=$PREFIX/lib/node_modules
 
 # Drop current works, and force checkout last commit.
 git_drop() {
-	if [ ! -d .git ]; then
-		echo "Not a git repo, give up."
-		return
-	fi
+  if [ ! -d .git ]; then
+    echo "Not a git repo, give up."
+    return
+  fi
 
-	rm -i -r * && git checkout -f HEAD
+  rm -i -r * && git checkout -f HEAD
 }
 
 # EasyAria2Config
@@ -31,17 +31,33 @@ rmedir() {
 
 ## Init function(s)
 _init_exec_() {
-  # $1: PROGRAM
-  if type "$1"; then
-	pgrep "$1" || {
-		"$1" &
-	}
+  test x"$1" = "x" && return
+
+  # Support script its wrapped a command.
+  case "$2" in
+    "")
+      prg="$1"
+      # The non-wrapped command its wrapper it is itself.
+      wrp="$1"
+      ;;
+    *)
+      prg="$1"
+      wrp="$2"
+      ;;
+  esac
+
+  if type "$prg"; then
+    pgrep "$prg" || {
+      nohup "$wrp" > /dev/null 2>&1 &
+    }
   fi
+
+  unset prg wrp
 }
 
 _init_start_() {
   _init_exec_ "sshd"
-  _init_exec_ "aria2d"
+  _init_exec_ "aria2c" "aria2d"
 }
 
 _init_start_ > /dev/null 2>&1

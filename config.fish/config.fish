@@ -4,12 +4,12 @@ export NODE_PATH="$PREFIX/lib/node_modules"
 
 # Drop current works, and force checkout last commit.
 function git_drop
-	if not test -d .git
-		echo "Not a git repo, give up."
-		return
-	end
+  if not test -d .git
+    echo "Not a git repo, give up."
+    return
+  end
 
-	rm -i -r *; and git checkout -f HEAD
+  rm -i -r *; and git checkout -f HEAD
 end
 
 # Alias function(s)
@@ -26,12 +26,24 @@ end
 
 # Init function(s)
 function _init_exec_
-  # $1: PROGRAM
-  if type "$argv[1]"
-    pgrep "$argv[1]"; or begin
-      "$argv[1]" &
+  test (count argv) -lt 1; and return
+
+  switch (count argv)
+    case "1"
+      set prg "$argv[1]"
+      set wrp "$argv[1]"
+    case "*"
+      set prg "$argv[1]"
+      set wrp "$argv[2]"
+  end
+
+  if type "$prg"
+    pgrep "$prg"; or begin
+      nohup "$wrp" > /dev/null 2>&1 &
     end
   end
+
+  set -e prg; and set -e wrp
 end
 
 function _init_start_
