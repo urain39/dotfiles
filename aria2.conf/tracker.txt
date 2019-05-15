@@ -48,6 +48,7 @@ http://sukebei.tracker.wf:8888/announce
 http://t.acg.rip:6699/announce
 http://t.nyaatracker.com/announce
 http://torrent-download.to:5869/announce
+http://torrent.nwps.ws/announce
 http://torrent.nwps.ws:80/announce
 http://torrentz.ofgods.com:2710/announce
 http://tpb.tracker.thepiratebay.org/announce
@@ -88,6 +89,7 @@ http://vip.tracker.thepiratebay.org/announce
 http://vip.tracker.thepiratebay.org/announce.php
 http://www.h33t.com:3310/announce
 https://tr.bangumi.moe:9696/announce
+https://tracker.vectahosting.eu:2053/announce
 udp://10.rarbg.com:80/announce
 udp://11.rarbg.com:80/announce
 udp://128.1.203.23:8080/announce
@@ -139,6 +141,7 @@ udp://public.popcorn-tracker.org:6969/announce
 udp://retracker.baikal-telecom.net:2710/announce
 udp://retracker.lanta-net.ru:2710/announce
 udp://thetracker.org:80/announce
+udp://torrentclub.tech:6969/announce
 udp://tr.bangumi.moe:6969/announce
 udp://tracker.1337x.org:80/announce
 udp://tracker.ccc.de:80
@@ -146,6 +149,7 @@ udp://tracker.coppersurfer.tk:6969
 udp://tracker.coppersurfer.tk:6969/announce
 udp://tracker.doko.moe:6969/announce
 udp://tracker.filepit.to:6969/announce
+udp://tracker.gbitt.info:80/announce
 udp://tracker.iamhansen.xyz:2000/announce
 udp://tracker.internetwarriors.net:1337/announce
 udp://tracker.istole.it:6969
@@ -153,6 +157,7 @@ udp://tracker.istole.it:80
 udp://tracker.lamsoft.net:6969/announce
 udp://tracker.leechers-paradise.org:6969
 udp://tracker.leechers-paradise.org:6969/announce
+udp://tracker.moeking.me:6969/announce
 udp://tracker.nyaa.uk:6969/announce
 udp://tracker.openbittorrent.com:80
 udp://tracker.openbittorrent.com:80/announce
