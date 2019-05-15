@@ -5,6 +5,7 @@ http://94.228.192.98.nyud.net/announce
 http://94.228.192.98/announce
 http://a.tracker.thepiratebay.org/announce
 http://a.tracker.thepiratebay.org/announce.php
+http://agusiq-torrents.pl:6969/announce
 http://anidex.moe:6969/announce
 http://announce.opensharing.org:2710/announce
 http://announce.torrentsmd.com:6969/announce
@@ -47,6 +48,7 @@ http://sukebei.tracker.wf:8888/announce
 http://t.acg.rip:6699/announce
 http://t.nyaatracker.com/announce
 http://torrent-download.to:5869/announce
+http://torrent.nwps.ws:80/announce
 http://torrentz.ofgods.com:2710/announce
 http://tpb.tracker.thepiratebay.org/announce
 http://tpb.tracker.thepiratebay.org/announce.php
@@ -72,6 +74,7 @@ http://tracker.thepiratebay.org/announce
 http://tracker.thepiratebay.org/announce.php
 http://tracker.torrent.to:2710/announce
 http://tracker.torrentbay.to:6969/announce
+http://tracker.torrentyorg.pl:80/announce
 http://tracker.ydy.com:87/announce
 http://tracker.yify-torrents.com/announce
 http://tracker1.torrentum.pl:6969/announce
@@ -115,6 +118,7 @@ udp://9.rarbg.me:2710/announce
 udp://9.rarbg.to:2710/announce
 udp://95.211.168.204:2710/announce
 udp://95.216.59.43:8080/announce
+udp://bt.dy20188.com:80/announce
 udp://bt.romman.net:6969/announce
 udp://bt.xxx-tracker.com:2710/announce
 udp://bt1.125a.net:6969/announce
@@ -132,6 +136,7 @@ udp://mgtracker.org:6969/announce
 udp://open.demonii.si:1337/announce
 udp://open.stealth.si:80/announce
 udp://public.popcorn-tracker.org:6969/announce
+udp://retracker.baikal-telecom.net:2710/announce
 udp://retracker.lanta-net.ru:2710/announce
 udp://thetracker.org:80/announce
 udp://tr.bangumi.moe:6969/announce
@@ -140,12 +145,15 @@ udp://tracker.ccc.de:80
 udp://tracker.coppersurfer.tk:6969
 udp://tracker.coppersurfer.tk:6969/announce
 udp://tracker.doko.moe:6969/announce
+udp://tracker.filepit.to:6969/announce
 udp://tracker.iamhansen.xyz:2000/announce
 udp://tracker.internetwarriors.net:1337/announce
 udp://tracker.istole.it:6969
 udp://tracker.istole.it:80
 udp://tracker.lamsoft.net:6969/announce
 udp://tracker.leechers-paradise.org:6969
+udp://tracker.leechers-paradise.org:6969/announce
+udp://tracker.nyaa.uk:6969/announce
 udp://tracker.openbittorrent.com:80
 udp://tracker.openbittorrent.com:80/announce
 udp://tracker.opentrackr.org:1337
