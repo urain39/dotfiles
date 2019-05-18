@@ -168,6 +168,7 @@ udp://tracker.publicbt.com:80
 udp://tracker.publicbt.com:80/announce
 udp://tracker.tiny-vps.com:6969/announce
 udp://tracker.torrent.eu.org:451/announce
+udp://tracker.uw0.xyz:6969
 udp://tracker.uw0.xyz:6969/announce
 udp://tracker.vanitycore.co:6969/announce
 udp://tracker.zer0day.to:1337/announce
