@@ -38,6 +38,7 @@ http://inferno.demonoid.me:3419/announce
 http://ipv4.tracker.harry.lu/announce
 http://kende.9999mb.com/announce.php
 http://mgtracker.org:6969/announce
+http://sukebei.tracker.wf:8888/announce
 http://nyaa.tracker.wf:7777/announce
 http://open.acgtracker.com:1096/announce
 http://open.tracker.thepiratebay.org/announce
