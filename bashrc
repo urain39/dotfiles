@@ -154,5 +154,4 @@ _init_start_() {
 }
 
 #_init_start_ > /dev/null 2>&1
-
 #export LC_ALL=zh_CN.UTF-8
