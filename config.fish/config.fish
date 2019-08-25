@@ -1,5 +1,12 @@
 export TERM="linux"
 export PATH="$PATH:$HOME/.local/bin"
+
+# Fix PREFIX
+switch "$PREFIX" in
+  case ""
+    export PREFIX=/usr
+end
+
 export NODE_PATH="$PREFIX/lib/node_modules"
 
 # Drop current works, and force checkout last commit.

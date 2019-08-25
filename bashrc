@@ -119,6 +119,13 @@ fi
 
 export TERM=linux
 
+# fix PREFIX
+case "$PREFIX" in
+  "")
+    export PREFIX=/usr
+    ;;
+esac
+
 # for NodeJS
 export NODE_PATH=$PREFIX/lib/node_modules
 
