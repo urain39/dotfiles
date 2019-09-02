@@ -2,7 +2,7 @@ export TERM="linux"
 export PATH="$PATH:$HOME/.local/bin"
 
 # Fix PREFIX
-switch "$PREFIX" in
+switch "$PREFIX"
   case ""
     export PREFIX=/usr
 end
